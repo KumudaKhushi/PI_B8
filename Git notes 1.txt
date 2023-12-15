@@ -1,0 +1,471 @@
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control
+$ git init
+Initialized empty Git repository in D:/PRIME INTUIT CLASSES/PI_B8 Vesion Control/.git/
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git init
+Reinitialized existing Git repository in D:/PRIME INTUIT CLASSES/PI_B8 Vesion Control/.git/
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Home.html
+        Sample.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add Home.html
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.py
+
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit
+[master (root-commit) a66f834] Base version of HTML
+ 1 file changed, 10 insertions(+)
+ create mode 100644 Home.html
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ touch contact.html
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ touch style1.css
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sample.py
+        contact.html
+        style1.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add -A
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Sample.py
+        new file:   contact.html
+        new file:   style1.css
+
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -m "Other base files"
+[master e911190] Other base files
+ 3 files changed, 7 insertions(+)
+ create mode 100644 Sample.py
+ create mode 100644 contact.html
+ create mode 100644 style1.css
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Home.html
+        modified:   contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git checkout Home.html
+Updated 1 path from the index
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Home.html
+        modified:   contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git diff
+diff --git a/Home.html b/Home.html
+index 5445f52..1733cce 100644
+--- a/Home.html
++++ b/Home.html
+@@ -6,5 +6,6 @@
+ </head>
+ <body>
+     <h1>Learning version control</h1>
++    <h2>Today is good day</h2>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/contact.html b/contact.html
+index e69de29..69b37fe 100644
+--- a/contact.html
++++ b/contact.html
+@@ -0,0 +1,12 @@
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Contact</title>
++</head>
++<body>
++    <h1>Contact page</h1>
++
++
++</body>
++</html>
+\ No newline at end of file
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add -A
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git diff
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git diff --staged
+diff --git a/Home.html b/Home.html
+index 5445f52..1733cce 100644
+--- a/Home.html
++++ b/Home.html
+@@ -6,5 +6,6 @@
+ </head>
+ <body>
+     <h1>Learning version control</h1>
++    <h2>Today is good day</h2>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/contact.html b/contact.html
+index e69de29..69b37fe 100644
+--- a/contact.html
++++ b/contact.html
+@@ -0,0 +1,12 @@
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Contact</title>
++</head>
++<body>
++    <h1>Contact page</h1>
++
++
++</body>
++</html>
+\ No newline at end of file
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Home.html
+        modified:   contact.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git diff
+diff --git a/contact.html b/contact.html
+index 69b37fe..16d1a9f 100644
+--- a/contact.html
++++ b/contact.html
+@@ -6,6 +6,7 @@
+ </head>
+ <body>
+     <h1>Contact page</h1>
++    <h2>Prime Intuit is the best place to develop technical skills </h2>
+
+
+ </body>
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add -A
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git diff
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -m "UPdated version V2"
+[master 08f82c7] UPdated version V2
+ 2 files changed, 14 insertions(+)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ touch extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -A -m "added bypassing the staging area
+> git commit -A -m "added bypassing the staging area"
+> ^C
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -A -m "added bypassing the staging area"
+error: unknown switch `A'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>)]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --[no-]quiet      suppress summary after successful commit
+    -v, --[no-]verbose    show diff in commit message template
+
+Commit message options
+    -F, --[no-]file <file>
+                          read message from file
+    --[no-]author <author>
+                          override author for commit
+    --[no-]date <date>    override date for commit
+    -m, --[no-]message <message>
+                          commit message
+    -c, --[no-]reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --[no-]reuse-message <commit>
+                          reuse message from specified commit
+    --[no-]fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --[no-]squash <commit>
+                          use autosquash formatted message to squash specified commit
+    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -t, --[no-]template <file>
+                          use specified template file
+    -e, --[no-]edit       force edit of commit
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]status         include status in commit message template
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --[no-]all        commit all changed files
+    -i, --[no-]include    add specified files to index for commit
+    --[no-]interactive    interactively add files
+    -p, --[no-]patch      interactively add changes
+    -o, --[no-]only       commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+    --[no-]dry-run        show what would be committed
+    --[no-]short          show status concisely
+    --[no-]branch         show branch information
+    --[no-]ahead-behind   compute full ahead/behind values
+    --[no-]porcelain      machine-readable output
+    --[no-]long           show status in long format (default)
+    -z, --[no-]null       terminate entries with NUL
+    --[no-]amend          amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    --post-rewrite        opposite of --no-post-rewrite
+    -u, --[no-]untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        extra.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -a -m "added bypassing the staging area"
+[master bc47ea6] added bypassing the staging area
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git rm --cache extra.py
+rm 'extra.py'
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    extra.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        extra.py
+
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -a -m "added bypassing the staging area"
+[master 1c4f540] added bypassing the staging area
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        extra.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git add extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git commit -m "readded"
+[master a342d8d] readded
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 extra.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git log -p -2
+commit a342d8d3060bad98c17a4a6be7f281f788bb9231 (HEAD -> master)
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:59:41 2023 +0530
+
+    readded
+
+diff --git a/extra.py b/extra.py
+new file mode 100644
+index 0000000..e69de29
+
+commit 1c4f540e331832e2efc73619bd867ed0c58441d1
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:58:30 2023 +0530
+
+    added bypassing the staging area
+
+diff --git a/extra.py b/extra.py
+deleted file mode 100644
+index e69de29..0000000
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git log -p -1
+commit a342d8d3060bad98c17a4a6be7f281f788bb9231 (HEAD -> master)
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:59:41 2023 +0530
+
+    readded
+
+diff --git a/extra.py b/extra.py
+new file mode 100644
+index 0000000..e69de29
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git log
+commit a342d8d3060bad98c17a4a6be7f281f788bb9231 (HEAD -> master)
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:59:41 2023 +0530
+
+    readded
+
+commit 1c4f540e331832e2efc73619bd867ed0c58441d1
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:58:30 2023 +0530
+
+    added bypassing the staging area
+
+commit bc47ea667303a6bf4dd3b3fe04dee1b6750c0cba
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:54:05 2023 +0530
+
+    added bypassing the staging area
+
+commit 08f82c7f0ffd55174a19097775999e9683e0ff89
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:45:26 2023 +0530
+
+    UPdated version V2
+
+commit e911190dc035e0cd4c850f3780ac29ebd45de249
+Author: Kumuda <kumudal19@gmail.com>
+Date:   Thu Dec 14 17:24:20 2023 +0530
+
+    Other base files
+
+commit a66f8345570b4fa6f61e058476fb979bb47636fc
+Author: Kumuda <kumudal19@gmail.com>
+ Base version of HTML
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ touch add.py
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        add.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-6E95NRL MINGW64 /d/PRIME INTUIT CLASSES/PI_B8 Vesion Control (master)
+$ git status -s
+?? add.py
